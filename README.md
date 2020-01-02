@@ -35,9 +35,16 @@ cd htb-repo
 
 ### Change remote repo to your own private repository on github.com or other site (Optional)
 
-**This is very important and needs to be in bold. Make sure you do not publish this to a public repository, keep your work private!**
+This step will show you how to place your copy of htb-repo into your own source repository on github.com which will allow you to store your work in a central location (although if you have large files there is some additional work to do which i'll try to add to the instructions later). This step is 100% optional, but please make sure you make it **private** so you don't accidently place spoilers on the internet. This assumes you already have key based authentication setup for github, if you do not you will need to do that first or you will get an authentication error.
 
-1. Create a **private** repository on a site like github.com
+1. Create a **private** repository on github.com called htb-repo (or anything else you want). Don't add any files to it.
+2. On the command line in your htb-repo directory run the following commands
+
+```
+git remote set-url origin git@github.com:/<your username>/htb-repo.git
+git push
+```
+That's it you should now be pushing to your own repository. 
 
 ### Setup virtual environment
 
