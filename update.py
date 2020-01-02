@@ -182,7 +182,7 @@ if __name__ == '__main__':
             create_notes(machine)
             create_scripts(machine)
             create_src(machine)
-            print(f'[+] Created directory for {key}')
+            print(f'[+] Created directory for {machine.name}')
 
 
 
