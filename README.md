@@ -93,6 +93,7 @@ src/              # source code for any tools or scripts for the machine
 tokens/           # tokens (ssh keys, logins etc. for the machine)
 tools/            # specific tools that you wrote or aquired for the machine
 ```
+#### You are finished getting started!
 
 ## Script Details
 
