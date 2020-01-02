@@ -2,7 +2,7 @@
 This project is one I created to help stay more organized when working on hackthebox.eu, the project has a basic skeleton that follows the way challenges are organized on the site itself as well as some scripts to help with interacting with the site using another project of mine `HTBClient` which inteacts with the hackthebox.eu site through the REST API that is used by the website itself.
 
 ## Requirements
-1. www.hackthebox.eu account (this has only been tested with VIP accounts, feel free to let me know how it works with free)
+1. www.hackthebox.eu account (this has only been tested with VIP accounts)
 2. python3
 3. git
 
@@ -67,6 +67,18 @@ This will go through and create directories, metadata and scripts for all curren
 [+] Created directory for playertwo
 ```
 
-and if you enter a directory you should see the following
+and if you enter a directory you should see the following directories and files
 
+```
+init.sh           # script to start working on a machine
+.meta/            # metadata related to the machine
+notes.md          # markdown file for notes on the system
+scans/            # scans as well as some scripts to do a quick/full scan
+scripts/          # scripts that control the machine via the HTBClient module
+src/              # source code for any tools or scripts for the machine
+tokens/           # tokens (ssh keys, logins etc. for the machine)
+tools/            # specific tools that you wrote or aquired for the machine
+```
+
+## Script Details
 
