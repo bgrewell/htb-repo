@@ -82,3 +82,26 @@ tools/            # specific tools that you wrote or aquired for the machine
 
 ## Script Details
 
+### Init.sh
+This script is designed to get you started working on a machine. What is does is it creates a metadata file .meta/initialized which is empty but can be used to find boxes that you have started working on. It also creates a symlink to the current directory in `htb-repo/machines/current` so it is easier to get to the current machine you are working on (especially if you have been away for a while) then it adds the machine to your `todo` list on hackthebox.eu and finally `starts` the box (shutting down any you currently have running) so that you can start working on it. 
+
+### scripts/start.sh
+Helper script that uses `HTBClient` to start a machine from the command line. In this case it is setup to start the machine for the directory you are currently inside.
+
+### scripts/stop.sh
+Helper script that uses `HTBClient` to stop a machine from the command line. In this case it is setup to stop the machine for the directory you are currently inside.
+
+### scripts/todo.sh
+Helper script that uses `HTBClient` to toggle todo for a machine from the command line. In this case it is setup to toggle the machine for the directory you are currently inside.
+
+### scripts/extend.sh
+Helper script that uses `HTBClient` to extend a machine from the command line. In this case it is setup to extend the machine for the directory you are currently inside.
+
+### scripts/own.sh
+Helper script that uses `HTBClient` to own a machine from the command line. In this case it is setup to own the machine for the directory you are currently inside. You need to pass the flag and how difficult you felt it was from 0-10
+
+### scans/nmap-quick.sh
+Helper script that launches an nmap scan with common quick settings
+
+### scans/nmap-full.sh
+Helper script that launches an nmap scan with full port scan settings
