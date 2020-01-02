@@ -9,6 +9,8 @@ This project is one I created to help stay more organized when working on hackth
 ## Getting Started
 First things first you will need to clone the project to your local system. I recommend creating a spot where you want to store your work on hackthebox.eu then using the below command to clone the repository.
 
+### Cloning the repository
+
 ```
 git clone https://github.com/BGrewell/htb-repo
 ```
@@ -31,6 +33,14 @@ Once complete you should change into the root of the repository
 cd htb-repo
 ```
 
+### Change remote repo to your own private repository on github.com or other site (Optional)
+
+**This is very important and needs to be in bold. Make sure you do not publish this to a public repository, keep your work private!**
+
+1. Create a **private** repository on a site like github.com
+
+### Setup virtual environment
+
 You will then need to initialize a virtual environment (or if you prefer you can just install the dependencies using pip) and activate the virtual environment and install the required packages.
 
 ```
@@ -39,6 +49,8 @@ source venv/bin/activate
 pip3 install -r requirements.txt
 ```
 
+### Setup credentials
+
 Next you will need to set your hackthebox.eu username and password as environmental variables
 
 ```
@@ -46,6 +58,8 @@ export HTB_USER='<your username>'
 export HTB_PASS='<your password>' 
 # NOTE: be sure to use single quotes as shown above if your password contains characters that bash will attempt to expand
 ```
+
+### Build machine folders
 
 Once this is complete you should be able to update the basic skeleton repository with machine spacific information by using the following command from the root of the repository
 
@@ -79,12 +93,6 @@ src/              # source code for any tools or scripts for the machine
 tokens/           # tokens (ssh keys, logins etc. for the machine)
 tools/            # specific tools that you wrote or aquired for the machine
 ```
-
-### Change remote repo to your own *Private* repository
-**This is very important and needs to be in bold. Make sure you do not publish this to a public repository, keep your work private!**
-
-1. Create a **private** repository on a site like github.com
-
 
 ## Script Details
 
