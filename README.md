@@ -80,6 +80,12 @@ tokens/           # tokens (ssh keys, logins etc. for the machine)
 tools/            # specific tools that you wrote or aquired for the machine
 ```
 
+### Change remote repo to your own *Private* repository
+**This is very important and needs to be in bold. Make sure you do not publish this to a public repository, keep your work private!**
+
+1. Create a **private** repository on a site like github.com
+
+
 ## Script Details
 
 ### Init.sh
