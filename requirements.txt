@@ -2,7 +2,7 @@ beautifulsoup4==4.8.1
 bs4==0.0.1
 certifi==2019.11.28
 chardet==3.0.4
-HTBClient==0.0.3
+HTBClient==0.2.3
 idna==2.8
 lxml==4.4.2
 requests==2.22.0
