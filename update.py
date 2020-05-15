@@ -2,6 +2,7 @@
 import os
 import json
 
+from pathlib import Path
 from HTBClient import client
 
 # common variables
@@ -12,6 +13,7 @@ def dir_exists(machine):
     machine_path = os.path.join(machines_root, machine.name)
     if not os.path.exists(machine_path):
         os.mkdir(machine_path)
+        Path(os.path.join(machine_path, ".gitkeep")).touch(mode=0o777, exist_ok=True)
         return False
     else:
         return True
@@ -95,13 +97,13 @@ def create_tokens(machine):
     tokens_path = os.path.join(machines_root, machine.name, 'tokens')
     if not os.path.exists(tokens_path):
         os.mkdir(tokens_path)
-
+        Path(os.path.join(tokens_path, ".gitkeep")).touch(mode=0o777, exist_ok=True)
 
 def create_tools(machine):
     tools_path = os.path.join(machines_root, machine.name, 'tools')
     if not os.path.exists(tools_path):
         os.mkdir(tools_path)
-
+        Path(os.path.join(tools_path, ".gitkeep")).touch(mode=0o777, exist_ok=True)
 
 def create_notes(machine):
     notes_path = os.path.join(machines_root, machine.name, 'notes.md')
@@ -119,6 +121,7 @@ def create_src(machine):
     src_path = os.path.join(machines_root, machine.name, 'src')
     if not os.path.exists(src_path):
         os.mkdir(src_path)
+        Path(os.path.join(src_path, ".gitkeep")).touch(mode=0o777, exist_ok=True)
 
 
 def create_scripts(machine):
